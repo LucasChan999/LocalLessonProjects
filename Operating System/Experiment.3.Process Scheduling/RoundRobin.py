@@ -1,6 +1,6 @@
 #Process Scheduling:RoundRobin
 #Chen XingLei
-#2017/5/12
+#2017/5/19
 #Python 2.7 64bit
 
 import sys
@@ -51,7 +51,6 @@ def RR_beta():
  for iter in range(0,process_num):
       WeightWholeTime.append(0)
   
- 
  #put the earliest progress in order at first
  #earliest = min(ArrivalTime)
  #for iter in range(process_num):
@@ -222,16 +221,5 @@ def RR_release():
  
  
  
-
-
-
-
-
-
-
-
-
-
-
 
 

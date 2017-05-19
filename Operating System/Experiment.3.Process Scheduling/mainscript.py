@@ -121,7 +121,6 @@ def RR_release():
  answer = (FinishTime,WholeTime,WeightWholeTime) 
  return (answer,AverageWT,AverageWWT,process_num)
 
-
 print "Welcome Use Round Robin system.......\n"
 #process_num,ArrivalTime,ServiceTime,value_Q = InputFromKeyboard.InputFromKeyboard()
 
@@ -140,5 +139,4 @@ for iter in range(0,3):
        print 'Process',it,"'s WeightWhole time:",answer[iter][it],'\n'
 print 'AverageWholeTime_FCFS',AverageWT_FCFS,'\n'
 print 'AverageWeightWholeWeight_FCFS',AverageWWT_FCFS,'\n'
-
 

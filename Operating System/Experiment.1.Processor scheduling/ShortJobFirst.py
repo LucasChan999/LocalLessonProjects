@@ -54,7 +54,7 @@ def SJF_release():
      #clean the temp_set
      temp_set_S = [] 
      temp_set_I = []
-  
+     
      temp2 = max(FinishTime)
      FinishTime[index] = temp_set_min + temp2 
      print "Time ",iter," Process ",index," start runnning..."

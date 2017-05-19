@@ -6,7 +6,7 @@
     <ProjectGuid>8806e54b-62da-4d40-8253-c6d6b311d822</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>mainscript.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="HighestResponseRatioNext.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="InputFromKeyboard.py" />
     <Compile Include="mainscript.py" />
     <Compile Include="RoundRobin.py">
