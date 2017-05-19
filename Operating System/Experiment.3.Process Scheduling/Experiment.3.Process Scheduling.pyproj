@@ -6,7 +6,7 @@
     <ProjectGuid>8806e54b-62da-4d40-8253-c6d6b311d822</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>test.py</StartupFile>
+    <StartupFile>mainscript.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,7 +31,7 @@
     <Compile Include="RoundRobin.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test.py">
+    <Compile Include="running_final.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

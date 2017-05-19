@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #Process Scheduling:RoundRobin
 #Chen XingLei
 #2017/5/19
@@ -9,6 +10,7 @@ sys.setdefaultencoding('utf8')
 
 import math
 import numpy as np
+
 
 def RR_beta():
  import main as m
@@ -122,14 +124,19 @@ def RR_beta():
  return (answer,AverageWT,AverageWWT)
 
 def RR_release():
+ import mainscript as ma
  MaxNum = 100
  #process_num = 5           #test data from homework   
  #ArrivalTime = [0,1,2,3,4]
  #ServiceTime = [6,2,5,9,8]
  #value_Q = 2; # set q default value = 2 time 
  #parameter
- process_num,ArrivalTime,ServiceTime,value_Q = InputFromKeyboard.InputFromKeyboard()
- 
+ #process_num,ArrivalTime,ServiceTime,value_Q = InputFromKeyboard.InputFromKeyboard()
+ process_num = ma.process_num          #test data from homework   
+ ArrivalTime = ma.ArrivalTime
+ ServiceTime = ma.ServiceTime
+ value_Q = ma.value_Q;
+  
  timer = 0
  tempA = [] #temp  for arrvial time 
  tempS = [] #process service time left for running

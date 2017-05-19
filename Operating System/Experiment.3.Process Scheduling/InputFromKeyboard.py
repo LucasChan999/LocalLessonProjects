@@ -3,7 +3,7 @@
 #2017/5/5
 #Python 2.7 64bit
 
-def InputFromKeyboard():
+def InputFromKeyboard(selection):
  process_num = input('Input Process Number:')
  ArrivalTime = []
  ServiceTime = []
@@ -18,5 +18,8 @@ def InputFromKeyboard():
     ServiceTime[iter] = input("Process's Service Time:")
     print "Process",iter + 1,'AT:',ArrivalTime[iter],'ST',ServiceTime[iter],'\n'
 
- value_Q = input("Please input value of Q: ")
+ #selection = input("Please choose algorithm:1->RR,2->TRRN\n")
+ value_Q = 1 #set default value in case 
+ if selection == 1:
+  value_Q = input("Please input value of Q: ")
  return process_num,ArrivalTime,ServiceTime,value_Q
