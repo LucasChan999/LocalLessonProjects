@@ -1,4 +1,4 @@
-#Process Shceduling�� main
+#Process Shceduling:main
 #Chen Xinlei
 #2017/5/20
 #Python 2.7 64bit
@@ -6,6 +6,11 @@
 #process_num = 5           #test data from homework   
 #ArrivalTime = [0,1,2,3,4]
 #ServiceTime = [6,2,5,9,8]
+
+import numpy as np  #libs for picture
+import scipy as sp
+import pylab as pl
+
 import math
 import numpy as np
 import InputFromKeyboard as IFKB
@@ -15,7 +20,6 @@ import RoundRobin as RR
 
 #test the function
 #RR.RR_beta()
-
 
 #test for pop function:PASS
 #ArrivalTime = [0,1,2,3,4]
@@ -45,7 +49,10 @@ def RR_release(selection):
  tempU = [] #list shows whether process is in order or not
  tempF = [] #list of process finished
  order = [] #store the index of process which are waiting for running in order 0->not exist 1-> exist
- 
+  
+ image_x = [] #image parameter                                                                             
+ image_y = [] 
+
  index0 = 0
  FinishTime = []
  WholeTime = []
@@ -84,7 +91,12 @@ def RR_release(selection):
         ti = tempS[index]
     else:
         ti = value_Q
-    timer = timer + ti
+
+    image_x.append(timer)                                                                                  
+    timer = timer + ti      #2017/5/19
+    image_x.append(timer)   #add the x 2017/5/26
+    image_y.append(index+1) #add the process index as y value 2017/5/26
+    image_y.append(index+1)
     #timer changed
     for iter in range(0,process_num):#already add position 0's progress
       if tempA[iter] <= timer and tempU[iter] == 0 :#!!!!!!try to avoid repeating
@@ -123,7 +135,13 @@ def RR_release(selection):
       WeightWholeTime[iter] =round( float(WholeTime[iter])/float(ServiceTime[iter]),2) #float make sure division makes decimal,round controls the accuracy
  AverageWT = round(np.mean(WholeTime),2)
  AverageWWT = round(np.mean(WeightWholeTime),2)
- answer = (FinishTime,WholeTime,WeightWholeTime) 
+ answer = (FinishTime,WholeTime,WeightWholeTime)
+ #generate the picture
+ pl.plot(image_x,image_y)        # base function satisfied                                           #added  2017/5/26 
+ pl.title('Round Robin')# give plot a title
+ pl.xlabel('time')# make axis labels
+ pl.ylabel('process')
+ pl.show()   
  return (answer,AverageWT,AverageWWT,process_num)
 
 def HRRN_release(selection):
@@ -136,13 +154,15 @@ def HRRN_release(selection):
   timer = 0  #time clock
   process_num,ArrivalTime,ServiceTime,value_Q = IFKB.InputFromKeyboard(selection) #value_Q not used 
   
-  
   tempA = []  #temp set for arrivltime
   Priority = [] #(waittime + servicetime)/ servicetime
   WaitTime = []
   temp_set_S = []
   temp_set_I = []
- 
+  
+  image_x = [] #image vector                                                                             
+  image_y = [] 
+  
   #answer
   FinishTime = []
   WholeTime = []
@@ -179,9 +199,6 @@ def HRRN_release(selection):
          if Priority[iter] == priority_min:
               index1 = temp_set_I[iter] 
      tempA[index1] = MaxNum #process index1 finished
-
-     ## test error :list index out of range 
-     #print 'index1,len(temp_set_S):',index1,len(temp_set_S),'\n'
 
      FinishTime[index1] = ServiceTime[index1] + timer
      timer =  ServiceTime[index1] + timer

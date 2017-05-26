@@ -89,7 +89,6 @@ def SJF_release():
    answer = (FinishTime,WholeTime,WeightWholeTime)
    return (answer,AverageWT,AverageWWT)
 
-
 def FCFS_release():
    import mainscript as main
    #ArrivalTime = [0,1,3,4,6]
@@ -143,8 +142,6 @@ def FCFS_release():
    #   print ArrivalTime[iter],'\n'
   
    return (answer,AverageWT,AverageWWT)
-
-
 
 if selection == 1:
 #FCFS.
