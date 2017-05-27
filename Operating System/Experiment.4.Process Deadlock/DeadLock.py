@@ -44,18 +44,24 @@ def DeadLock():
     print '---------------------------\n'    
 
     end_flag = 5 - sum(Finish)
-    while end_flag:
-      print process_uf,'\n'
-      for iter0 in range(process_num):  
+    #while end_flag:
+    print process_uf,'\n'
+    for iter0 in range(process_num):  
         Allo = [0,0,0]
         #find the available process under work[iter] and store in temp_available
+        bool_process = 0 #judge if there is process available for now 
         for iter1 in range(process_num):
             if Need[iter1][0] <= Work[0] and Need[iter1][1] <= Work[1] and Need[iter1][2] <= Work[2] and process_uf[iter1] == 0:
                temp_available.append(Need[iter1])
                temp_available_I.append(iter1)
+               bool_process = 1
+        if bool_process:
+           print 'there is process avalilable for now\n'
+        else:
+           print 'Could not find process available for now\n '
         #run the first one in work
         print 'temp index:',temp_available_I,'\n'
-        index = temp_available_I[0]         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        index = temp_available_I[0]         #2017_5_27 test for bug 
         safe_order.append(index)
         print 'safe order is :',safe_order,'\n'
         print 'len of process:',len(process_uf),' and index:',index,'\n'
