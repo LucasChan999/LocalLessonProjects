@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Exepriment.2.Process Synchr
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Experiment.4.Process Deadlock", "..\Experiment.4.Process Deadlock\Experiment.4.Process Deadlock.pyproj", "{A4904FFD-9020-4A42-A6D3-CBB11EECE8B8}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Experiment.5.Dynaminc Partitioning Allocation", "..\Experiment.5.Dynaminc Partitioning Allocation\Experiment.5.Dynaminc Partitioning Allocation.pyproj", "{64AA4D19-4D5E-47FE-B41E-C7C54B1AE14A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,8 @@ Global
 		{96FB3FA1-30D5-4927-A36B-BEE9E361A772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4904FFD-9020-4A42-A6D3-CBB11EECE8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4904FFD-9020-4A42-A6D3-CBB11EECE8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64AA4D19-4D5E-47FE-B41E-C7C54B1AE14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64AA4D19-4D5E-47FE-B41E-C7C54B1AE14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
