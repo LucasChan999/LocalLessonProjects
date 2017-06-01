@@ -51,7 +51,7 @@ def FirstFit():
  print answer_allocation
  return answer_allocation
 
-FirstFit()
+FirstFit();
 
 #def NextFit():
 
