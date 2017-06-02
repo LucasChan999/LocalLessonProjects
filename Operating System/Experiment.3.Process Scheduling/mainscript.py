@@ -35,7 +35,7 @@ def RR_release(selection):
  #ServiceTime = [6,2,5,9,8]
  #value_Q = 2; # set q default value = 2 time 
  #parameter
- process_num,ArrivalTime,ServiceTime,value_Q = IFKB.InputFromKeyboard(selection)
+ re_index,re_vector = IFKB.InputFromKeyboard(selection)
 
  #process_num = main.process_num          #test data from homework   
  #ArrivalTime = main.ArrivalTime

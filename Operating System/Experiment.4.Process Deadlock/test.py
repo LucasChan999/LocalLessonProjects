@@ -48,3 +48,15 @@ for iter in range(5):
     for iter1 in range(3):
       print Need[iter][iter1],'\n'
 print  '----------------------------------7'
+
+#test 8:
+
+#re_index = input("Please input process number: ")
+#re_index = re_index - 1
+#for iter in range(3):
+#   re_vector = input("Please input requset resource:") #only allow one parameter input
+print  '----------------------------------8'
+#test 9:
+
+#print [1,2,3] - [0,1,2] #wrong
+print  '----------------------------------9'
