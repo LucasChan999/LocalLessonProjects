@@ -25,11 +25,11 @@ def OPI():
       if PageOrder[iter1] == block[iter2]:
          judge = True
   if not judge :#not found
-        print 'Page not found'
+        print 'Page not found in BLock'
         LackNum = LackNum + 1
         if len(block) < block_num:
            block.append(PageOrder[iter1])
-           print 'len of block:',len(block)
+           #print 'len of block:',len(block)
            #block_time.append(iter1)
         else:
            #find the farest uesd block[page] 
@@ -52,10 +52,10 @@ def OPI():
                       use_found = True
                         
            if use_found:
-                   print 'Use Found'
-                   print 'Block',block
-                   print 'use_future',use_future
-                   print 'use_index',use_index
+                   #print 'Use Found'
+                   #print 'Block',block
+                   #print 'use_future',use_future
+                   #print 'use_index',use_index
                    if len(use_future) == block_num:
                       temp = 0
                       temp = max(use_future)
@@ -64,7 +64,7 @@ def OPI():
                              index = use_index[iter]
                       #print 'use_future',use_future
                    else :
-                      print 'len(use_future) != block_num'
+                      #print 'len(use_future) != block_num'
                       #find the page which is in block now but does not appear any more
                       temp1 = []
                       for iter in use_future:
@@ -77,13 +77,14 @@ def OPI():
                              index = iter
            else:
                #none of the pages in block were found in the PageOrder[left]
-               print 'Use not found'
+               #print 'Use not found'
                index = 0 #first page in block
-           print 'test iter1:',iter1,'index',index
+           #print 'test iter1:',iter1,'index',index
            block[index] = PageOrder[iter1] #replace the page of index 
   else:
-        print 'Page Found'
-  print 'Time',iter1,' page needed',PageOrder[iter1],':',block
+        print 'Page Found in Block'
+  #print 'Time',iter1,' page needed',PageOrder[iter1],':',block
+  print 'Block:',block
   print '--------------------------------------'
  LackPageRate = round(float(LackNum)/float(len(PageOrder)),2)   
  print 'LackNum:',LackNum,'\nLackPageRate:',LackPageRate     

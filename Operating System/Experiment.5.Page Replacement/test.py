@@ -9,7 +9,13 @@ judge =  temp  in test
 print judge
 
 #2
-test1 = set[3,2]
-test2 = set[2,3,4]
-print test2 - test1
+#test1 = set[3,2]
+#test2 = set[2,3,4]
+#print test2 - test1
+
+#3
+print '------------------'
+test3 = []
+test3.insert(0,'test3')
+print test3
 

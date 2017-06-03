@@ -30,16 +30,16 @@ def FIFO():
     for iter2 in range(len(block)):#try to find the fit page
         if PageOrder[iter1] == block[iter2]:
            judge = True
-    print 'Page Now:',PageOrder[iter1]
-    print 'Block Time before Replace:',block_time
+    print 'Page Read:',PageOrder[iter1]
+    #print 'Block Time before Replace:',block_time
     if not judge :#not found
-        print 'Page not found'
+        print 'Page not found in Block'
         LackNum = LackNum + 1
         if len(block) < block_num:
            block.append(PageOrder[iter1])
            #block_time[len(block) - 1] = iter1
            block_time.append(iter1)
-           print 'len of block:',len(block),'len of time',len(block_time)
+           #print 'len of block:',len(block),'len of time',len(block_time)
         #find the earlist page so far 
         else:
          #refresh the block_time_D 
@@ -54,9 +54,10 @@ def FIFO():
          block[index] = PageOrder[iter1] #replace the page of index 
          block_time[index] = iter1 #time changes 
     else:
-        print 'Page Found'
-    print 'Block Time:',block_time
-    print 'Time',iter1,' page needed',PageOrder[iter1],':',block
+        print 'Page Found in Block'
+    #print 'Block Time:',block_time
+    #print 'Time',iter1,' page needed',PageOrder[iter1],':',block
+    print 'Block:',block
     print '--------------------------------------' 
  LackPageRate = round(float(LackNum)/float(len(PageOrder)),2)  
  print 'LackNum:',LackNum,'\nLackPageRate:',LackPageRate    
