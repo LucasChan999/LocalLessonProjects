@@ -13,14 +13,14 @@ def FIFO():
  block = [] #store the page in physical block
  block_time = [] #store the read-in time of page stroed in block
  #block_time_D = [] #d-value between the read-in time and time now
- temp_PO = []
+ #temp_PO = []
  #finished = []
  #output
  LackNum = 0
  LackPageRate = round(0,2)
  
- for iter in range(len(PageOrder)):
-    temp_PO.append(PageOrder[iter]);
+ #for iter in range(len(PageOrder)):
+ #   temp_PO.append(PageOrder[iter]);
  #for iter in range(PageNum):
  #   finished.append(0)
   
@@ -59,7 +59,8 @@ def FIFO():
     print 'Time',iter1,' page needed',PageOrder[iter1],':',block
     print '--------------------------------------' 
  LackPageRate = round(float(LackNum)/float(len(PageOrder)),2)  
- print 'LackNum:',LackNum,'\nLackPageRate:',LackPageRate     
+ print 'LackNum:',LackNum,'\nLackPageRate:',LackPageRate    
+ 
 FIFO();
  
     
