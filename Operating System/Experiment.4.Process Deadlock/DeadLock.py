@@ -1,4 +1,4 @@
-#Process Deadlock: DL
+#Process Deadlock: Bank Algorithm
 #Chen Xinlei
 #2017/5/26
 #Python 2.7 64bit
@@ -80,7 +80,7 @@ def DeadLock():
         Finish[index] = 1
         temp_available = [] #clear the temp set 
         temp_available_I = [] 
-        print 'end flag is ',5 - sum(Finish),'\n'
+        print 'end flag is ',5 - sum(Finish),'\n' #nums of process which are not finished 
         print '---------------------------\n'
     if len(safe_order) == 5:
           print 'Safe order generated :',safe_order,'\n'
