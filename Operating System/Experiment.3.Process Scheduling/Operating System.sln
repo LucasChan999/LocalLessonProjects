@@ -13,6 +13,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Experiment.2.Process Synchr
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Experiment.5.Page Replacement", "..\Experiment.5.Page Replacement\Experiment.5.Page Replacement.pyproj", "{74B2E491-BF77-4585-AF2F-E610EDB94BB6}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Experiment.6.Disk Scheduling", "..\Experiment.6.Disk Scheduling\Experiment.6.Disk Scheduling.pyproj", "{018288D6-6682-4FBB-96B4-30014FD3AA33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,8 @@ Global
 		{96FB3FA1-30D5-4927-A36B-BEE9E361A772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74B2E491-BF77-4585-AF2F-E610EDB94BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74B2E491-BF77-4585-AF2F-E610EDB94BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018288D6-6682-4FBB-96B4-30014FD3AA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018288D6-6682-4FBB-96B4-30014FD3AA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
