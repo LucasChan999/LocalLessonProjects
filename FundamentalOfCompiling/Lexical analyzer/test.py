@@ -1,4 +1,3 @@
-import class_test as ct 
+#test1
 
-x = ct
-print x.Father.__doc__()
+print '1'>='a'

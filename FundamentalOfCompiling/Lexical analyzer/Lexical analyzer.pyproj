@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0b78502b-17bf-439d-9851-e3b10aba5806</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>class_test.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,14 +22,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="class_test.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="function.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Lexical_analyzer.py" />
-    <Compile Include="operate_class.py">
+    <Compile Include="mainscipt.py" />
+    <Compile Include="swtich.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">
